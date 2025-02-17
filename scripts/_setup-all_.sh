@@ -12,6 +12,7 @@ log "install brew package manager..."
 
 ./build-utils.sh
 ./shell-utils.sh
+./ssh.sh
 ./apps.sh
 ./javascript.sh
-
+./tmux.sh
