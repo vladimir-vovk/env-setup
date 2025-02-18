@@ -18,6 +18,12 @@ finish() {
   echo ""
 }
 
+info() {
+  echo ""
+  echo " ℹ️  $1"
+  echo ""
+}
+
 run() {
   if [[ $dry_run == "false" ]]; then
     "$@"
@@ -64,19 +70,19 @@ link_config() {
   source="$1"
   dest="$2"
 
-  if [ ! -f $source ]; then
+  if [ ! -f $source && ! -d $source ]; then
     log "!! Configuration file is not found !!"
     log "\"$source\" does not exist."
     log "! Make sure you have the \"env-setup\" folder inside your home directory."
   
-    if [ ! -f $dest ]; then
-      log "create empty config..."
-      run touch $dest
-    fi
+    # if [ ! -f $dest ]; then
+    #   log "create empty config..."
+    #   run touch $dest
+    # fi
   else
     if [ -L $dest ]; then
       log "remove old symbolic link to config..."
-      run rm $dest
+      run rm -rf $dest
     elif [ -f $dest ]; then
       log "backup current config..."
       backup $dest
