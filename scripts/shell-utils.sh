@@ -14,6 +14,6 @@ log "install fonts..."
 run brew install font-fira-code font-fira-code-nerd-font font-source-code-pro
 
 log "install other..."
-run brew install htop btop ffmpeg httpie lazygit ispell neofetch mas mc rsync scrcpy sevenzip tree yt-dlp ripgrep 
+run brew install htop btop ffmpeg httpie lazygit ispell neofetch mas mc rsync scrcpy sevenzip tree yt-dlp ripgrep fd
 
 finish
