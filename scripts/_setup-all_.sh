@@ -17,4 +17,5 @@ log "install brew package manager..."
 ./javascript.sh
 ./tmux.sh
 ./wezterm.sh
+./iterm.sh
 ./apps.sh
