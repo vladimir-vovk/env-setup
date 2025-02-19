@@ -1,0 +1,10 @@
+code --install-extension bodil.file-browser
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension jacobdufault.fuzzy-search
+code --install-extension kahole.magit
+code --install-extension quarkquartet-irw.doom-solarized
+code --install-extension ryanolsonx.solarized
+code --install-extension vscodevim.vim
+code --install-extension vspacecode.vspacecode
+code --install-extension vspacecode.whichkey

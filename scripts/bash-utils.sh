@@ -36,33 +36,32 @@ log() {
   else
     echo " > $1"
   fi
-  echo
 }
 
 backup() {
-  run mv $1 "$1.$(date +%Y-%m-%d_%H-%M-%S)"
+  run mv "$1" "$1.$(date +%Y-%m-%d_%H-%M-%S)"
 }
 
 cp_config() {
   source="$1"
   dest="$2"
 
-  if [ ! -f $source ]; then
+  if [ ! -f "$source" ]; then
     log "!! Configuration file is not found !!"
     log "\"$source\" does not exist."
     log "! Make sure you have the \"env-setup\" folder inside your home directory."
   else
-    if [ -L $dest ]; then
+    if [ -L "$dest"]; then
       log "remove old symbolic link to config..."
-      run rm $dest
-    elif [ -f $dest ]; then
+      run rm "$dest"
+    elif [ -f "$dest" ]; then
       log "backup current config..."
-      backup $dest
+      backup "$dest"
     fi
   
     log "copy config to \"$source\"..."
-    run mkdir -p $(dirname $dest)
-    run cp $source $dest
+    run mkdir -p $(dirname "$dest")
+    run cp -rf "$source" "$dest"
   fi
 }
 
@@ -70,27 +69,27 @@ link_config() {
   source="$1"
   dest="$2"
 
-  if [ ! -f $source && ! -d $source ]; then
+  if [ ! -f "$source" && ! -d "$source" ]; then
     log "!! Configuration file is not found !!"
     log "\"$source\" does not exist."
     log "! Make sure you have the \"env-setup\" folder inside your home directory."
   
-    # if [ ! -f $dest ]; then
+    # if [ ! -f "$dest" ]; then
     #   log "create empty config..."
-    #   run touch $dest
+    #   run touch "$dest"
     # fi
   else
-    if [ -L $dest ]; then
+    if [ -L "$dest" ]; then
       log "remove old symbolic link to config..."
-      run rm -rf $dest
-    elif [ -f $dest ]; then
+      run rm -rf "$dest"
+    elif [ -f "$dest" ]; then
       log "backup current config..."
-      backup $dest
+      backup "$dest"
     fi
   
     log "link config to \"$source\"..."
-    run mkdir -p $(dirname $dest)
-    run ln -s $source $dest
+    run mkdir -p $(dirname "$dest")
+    run ln -s "$source" "$dest"
   fi
 }
 

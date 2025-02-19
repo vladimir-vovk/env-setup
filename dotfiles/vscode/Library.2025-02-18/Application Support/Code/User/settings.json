@@ -1,0 +1,100 @@
+{
+  "eslint.rules.customizations": [
+    {
+      "rule": "no-console",
+      "severity": "off"
+    }
+  ],
+  "editor.fontFamily": "'FiraCode Nerd Font Retina', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.fontWeight": "300",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Solarized Light+",
+  "workbench.startupEditor": "none",
+  "rust.mode": "legacy",
+  "terminal.integrated.fontSize": 15,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.lineNumbers": "relative",
+  "workbench.editor.showTabs": "single",
+  "prettier.semi": false,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "explorer.openEditors.visible": 0,
+  "workbench.settings.editor": "json",
+  "breadcrumbs.enabled": false,
+  "npm.enableScriptExplorer": true,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>"],
+      "commands": ["vspacecode.space"]
+    },
+    {
+      "before": [","],
+      "commands": [
+        "vspacecode.space",
+        {
+          "command": "whichkey.triggerKey",
+          "args": "m"
+        }
+      ]
+    }
+  ],
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.wordWrap": "on",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.activityBar.location": "hidden",
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "vim.camelCaseMotion.enable": true
+  // "typescript.validate.enable": false,
+  // "javascript.validate.enable": false,
+}

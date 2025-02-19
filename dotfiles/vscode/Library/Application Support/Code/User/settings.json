@@ -1,0 +1,125 @@
+{
+    "workbench.colorTheme": "Solarized Light+",
+    "window.zoomLevel": 0,
+    "editor.formatOnSave": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.fontSize": 15,
+    "workbench.statusBar.visible": true,
+    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+    "workbench.activityBar.location": "hidden",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.hideCursorInOverviewRuler": true,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "explorer.decorations.colors": false,
+    "explorer.compactFolders": false,
+    "git.decorations.enabled": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.renderLineHighlight": "none",
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.vertical": "auto",
+    "editor.showFoldingControls": "never",
+    "editor.glyphMargin": false,
+    "editor.folding": false,
+    "workbench.layoutControl.enabled": false,
+    "window.title": " ",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "workbench.editor.showTabs": "single",
+    "window.commandCenter": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.matchBrackets": "never",
+    "editor.minimap.enabled": false,
+    "scm.diffDecorationsGutterPattern": {
+        "added": false,
+        "modified": false,
+    },
+    "scm.diffDecorations": "none",
+    "scm.diffDecorationsGutterAction": "none",
+    "files.autoSave": "onWindowChange",
+    "workbench.sideBar.location": "right",
+    "editor.lineNumbers": "relative",
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "vspacecode.space"
+            ]
+        },
+        {
+            "before": [
+                ","
+            ],
+            "commands": [
+                "vspacecode.space",
+                {
+                    "command": "whichkey.triggerKey",
+                    "args": "m"
+                }
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+}
