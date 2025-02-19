@@ -19,6 +19,8 @@ log "install brew package manager..."
 ./wezterm.sh
 ./iterm.sh
 ./alacritty.sh
+./kitty.sh
 ./emacs.sh
+./neovim.sh
 ./vscode.sh
 ./apps.sh
