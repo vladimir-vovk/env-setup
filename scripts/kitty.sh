@@ -9,7 +9,7 @@ run brew install -cask kitty
 
 log "link configs..."
 source="$HOME/env-setup/dotfiles/kitty/.config/kitty"
-dest="$HOME/.config"
+dest="$HOME/.config/kitty"
 link_config $source $dest
 
 finish

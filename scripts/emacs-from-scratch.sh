@@ -9,7 +9,7 @@ run brew tap d12frosted/emacs-plus
 run brew install emacs-plus@30
 
 source="$HOME/env-setup/dotfiles/emacs-from-scratch/.emacs.d"
-dest="$HOME"
+dest="$HOME/.emacs.d"
 link_config $source $dest
 
 log "link Emacs to Applications folder"

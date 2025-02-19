@@ -9,7 +9,7 @@ run brew install neovim
 
 log "link config..."
 source="$HOME/env-setup/dotfiles/nvim/.config/nvim"
-dest="$HOME/.config"
+dest="$HOME/.config/nvim"
 link_config $source $dest
 
 finish

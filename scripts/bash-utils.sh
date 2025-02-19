@@ -61,7 +61,13 @@ cp_config() {
 
     log "copy config to \"$source\"..."
     run mkdir -p $(dirname "$dest")
-    run cp -rf "$source" "$dest"
+
+    # link file to dest dir and folder to parent dest dir
+    if [[ -f $source ]]; then
+      run ln -s "$source" "$dest"
+    else
+      run ln -s "$source" $(dirname "$dest")
+    fi
   fi
 }
 
@@ -89,7 +95,13 @@ link_config() {
 
     log "link config to \"$source\"..."
     run mkdir -p $(dirname "$dest")
-    run ln -s "$source" "$dest"
+
+    # link file to dest dir and folder to parent dest dir
+    if [[ -f $source ]]; then
+      run ln -s "$source" "$dest"
+    else
+      run ln -s "$source" $(dirname "$dest")
+    fi
   fi
 }
 
