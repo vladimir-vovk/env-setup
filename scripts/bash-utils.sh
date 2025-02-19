@@ -51,7 +51,7 @@ cp_config() {
     log "\"$source\" does not exist."
     log "! Make sure you have the \"env-setup\" folder inside your home directory."
   else
-    if [[ -L "$dest"]]; then
+    if [[ -L "$dest" ]]; then
       log "remove old symbolic link to config..."
       run rm "$dest"
     elif [[ -f "$dest" ]]; then
