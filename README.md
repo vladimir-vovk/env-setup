@@ -1,12 +1,10 @@
-<h1 align="center">
+<h3 align="center">
 env-setup
-</h1>
+</h3>
 
 <p align="center">
-Bootstrap you dev environment in minutes instead of hours! 🛠️
+Bootstrap you dev environment in minutes not hours! 🛠️
 </p>
-
-<img src="./screen.gif" width="600"></img>
 
 ## Quick Start
 
@@ -21,3 +19,6 @@ Bootstrap you dev environment in minutes instead of hours! 🛠️
 - `dotfiles` - configuration files.
 - `scripts` - setup scripts.
 
+## Demo
+
+<img src="./screen.gif" width="600"></img>
