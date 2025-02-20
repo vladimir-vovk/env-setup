@@ -24,3 +24,4 @@ log "install brew package manager..."
 ./neovim.sh
 ./vscode.sh
 ./apps.sh
+./macos-settings.sh
