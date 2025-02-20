@@ -46,7 +46,7 @@ cp_config() {
   source="$1"
   dest="$2"
 
-  if [[ ! -f "$source" ]]; then
+  if [[ ! -e "$source" ]]; then
     log "!! Configuration file is not found !!"
     log "\"$source\" does not exist."
     log "! Make sure you have the \"env-setup\" folder inside your home directory."
@@ -60,13 +60,14 @@ cp_config() {
     fi
 
     log "copy config to \"$source\"..."
-    run mkdir -p $(dirname "$dest")
+    run mkdir -p "$(dirname "$dest")"
 
-    # link file to dest dir and folder to parent dest dir
+    # if source is a file then copy to dest dir
     if [[ -f $source ]]; then
-      run ln -s "$source" "$dest"
+      run cp -rf "$source" "$dest"
     else
-      run ln -s "$source" $(dirname "$dest")
+      # if source is a folder then copy to parent of the dest dir
+      run cp -rf "$source" "$(dirname "$dest")"
     fi
   fi
 }
@@ -94,13 +95,13 @@ link_config() {
     fi
 
     log "link config to \"$source\"..."
-    run mkdir -p $(dirname "$dest")
+    run mkdir -p "$(dirname "$dest")"
 
     # link file to dest dir and folder to parent dest dir
-    if [[ -f $source ]]; then
+    if [[ -f "$source" ]]; then
       run ln -s "$source" "$dest"
     else
-      run ln -s "$source" $(dirname "$dest")
+      run ln -s "$source" "$(dirname "$dest")"
     fi
   fi
 }
