@@ -1,10 +1,10 @@
-<p align="center">
-Bootstrap you dev environment in minutes instead of hours! 🛠️
-</p>
-
 <h1 align="center">
 env-setup
 </h1>
+
+<p align="center">
+Bootstrap you dev environment in minutes instead of hours! 🛠️
+</p>
 
 <img src="./screen.gif" width="600"></img>
 
