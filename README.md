@@ -6,6 +6,8 @@ env-setup
 Bootstrap you dev environment in minutes not hours! 🛠️
 </p>
 
+---
+
 Please read [Automate Your Dev Environment Setup](https://dev.to/vladimirvovk/why-our-dev-setup-sucks-il1) article for details.
 
 ## Quick Start
