@@ -5,7 +5,7 @@
 start "neovim"
 
 log "install neovim..."
-run brew install neovim
+run brew install neovim tree-sitter tree-sitter-cli
 
 log "link config..."
 source="$HOME/env-setup/dotfiles/nvim/.config/nvim"
